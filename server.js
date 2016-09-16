@@ -3,7 +3,7 @@ var http = require('http');
 var handleRequest = function(request, response) {
     console.log('Received request for URL: ' + request.url);
     response.writeHead(200);
-    response.end('Hello Kubernetes V2<br>');
+    response.end('Hello Kubernetes V2<br>New push to see what happens with the container label in docker build.');
 };
 
 var www = http.createServer(handleRequest);
